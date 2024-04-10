@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz 4to aniversario peque <3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            font-family: "Madimi One", sans-serif;
+            text-align: center;
+            margin: 0;
+            /* overflow: hidden; */
+            padding: 0;
+        }
+
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .photo-album {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .photo-container {
+            position: relative;
+            width: 300px;
+            height: 500px;
+            overflow: hidden;
+            border: 2px solid #333;
+            border-radius: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: filter 0.2s ease;
+            transition: transform 0.2s ease;
+        }
+
+        .photo-container:hover img {
+            filter: blur(5px);
+            transform: scale(1.5);
+            transform-origin: center center;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            transition: opacity 0.5s ease;
+            z-index: 2;
+            transform: translateY(-50%);
+        }
+
+        .photo-container:hover .text-overlay {
+            opacity: 1;
+        }
+
+        .image-input {
+            width: 70%;
+            margin: 0 auto  ;
+            padding: 5px;
+            box-sizing: border-box;
+            z-index: 2;            
+            top: 50%;
+            left: 50%;
+        }
+
+        .custom-button {
+            height: 3rem;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .custom-button:hover {
+            background-color: #45a049;
+        }
+
+        .custom-button-label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .cat{
+            position: absolute;
+            margin: 16pt;
+            left: 42%;
+            height: 4.5cm;
+            rotate: 193deg;
+            transition: opacity 0.2s ease;;
+        }
+
+        .cat:hover{
+            opacity: 0;
+        }
+
+        #cat2{
+            position: absolute;
+            margin: 16pt;
+            left: 42%;
+            height: 4.5cm;
+            rotate: 193deg;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        #message{
+            width: 20%;
+            margin: 0 auto;
+            opacity: 0;
+            border: 4rem;
+            transition: opacity 0.2s ease;
+            box-sizing: border-box;
+            border-radius:  5px;
+        }
+
+        #section:hover #message{
+            opacity: 1;
+        }
+
+        #section:hover #cat2{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="https://static.videezy.com/system/resources/previews/000/031/593/original/heart-background5.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <header>
+        <h1>4 meses de memorias, 4 meses de tí</h1>
+    </header>
+    
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0tgVpDi06FyKpA1z0VMD4v?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    <div class="photo-album">
+        <div class="photo-container">
+            <img class="photo" src="https://lh3.googleusercontent.com/pw/AP1GczP8xK23haDElVDyflqX6nhjlRfL30jDoIvej8YD0jWDqf9qyU_rql9hHZW3ram_Hzkeh5anZHuvqlfOEqit0v12KTZLZBrkXQjbNjAUaP9Tl7xGRhM3BrvcFcvHl9-3skKgGbixGBm1oyFz31U28ARf=w505-h899-s-no-gm?authuser=0" alt="Foto 1">
+            <div class="text-overlay">Inicio: Todo empezó de una forma interesante y curiosa. Ambos sabemos como empezamos y ahora nos reimos de recordarlo, nuestros planes para con el otro, las pelis, los regalitos, las teorias conspirativas que nos imaginabamos, las indirectas, nuestra amistad, los memes, los stickers y sobre todo los chismes. Pero estoy seguro que desde esa conversación frente a un barandal y desde nuestro primer beso me sentí agradecido por tenerte a mi lado.</div>
+        </div>
+        <div class="photo-container">
+            <img class="photo" src="https://lh3.googleusercontent.com/pw/AP1GczNSloOZSIzIhRTrMfzPtHkyTwV7ztTG-TpCHAnILquQZpR5dNAS1EEy8_RFrlNpxn8x02nRxCIuTkJU6MhLVEsQOXIU0Jn0q6XIRpp0Ok8sZE9xrI8a5WgV-onqsMUry1E3eGKBGNYV9gZkmYYnE4VF=w676-h899-s-no-gm?authuser=0" alt="Foto 2">
+            <div class="text-overlay">Salidas: Los paseos y salidas que salimos fueron especiales, perdón por hacerte caminar, pero contigo todo lo que hacemos es mucho más divertido y caminar era una forma de pasar mucho más contigo. Esa navidad y ese año nuevo fueron los mejores de mi vida. Que digo navidad o año nuevo, ese noviembre, diciembre y enero fueron los mejores de mi vida. Y cada día lo es porque estás ahí.</div>
+        </div>
+        <div class="photo-container">
+            <img class="photo" src="https://lh3.googleusercontent.com/pw/AP1GczMPlO92B9mTtEomqyrJRkWFzlOSVkRx6DqAaq5PzaddI8A8TiDDjTCmVEYFS5c3ZsAk40mokk5VJEIEmdQajR5ON-BU4_hY2JpwUdKRNmENufVaTjYJiebp_IYdTzJZUgoFGXKOrsurV_J3UZv23L6M=w395-h899-s-no-gm?authuser=0" alt="Foto 3">
+            <div class="text-overlay">Viaje con amigos (guiño guiño): Nunca habia viajado solo (al menos no por diversión), contigo me sentí libre y lleno de energía, verte dormir y dormir contigo, comer, ver HH. Absolutamente todo fue maravilloso y fue increible. A pesar de lo que paso jeje :,) </div>
+        </div>
+        <div class="photo-container">
+            <img class="photo" src="https://lh3.googleusercontent.com/pw/AP1GczOQCREp-EleDgThrn1oBX9zHbUIaSJ6xq5lbr09FogEvd9U4YQoJEVGh2E2OVnE4juz2oPjn9GPqUVoWP9U6u4gwUsGXYWD5ZOrlVBRqrQGsn-jjR1WjB6cm330AV9AUuNHqybRSkpqCb734g-IvEfe=w395-h899-s-no-gm?authuser=0" alt="Foto 4">
+            <div class="text-overlay">Mundo: A pesar de una playa con muchas personas, esa caminata realmente la sentí como si el mundo alrededor desapareciera. Como si el mundo que me rodea no importase porque en ese momento mi mundo eras tú.</div>
+        </div>
+        <div class="photo-container">
+            <img class="photo" src="https://lh3.googleusercontent.com/pw/AP1GczOlqu3h676nn55YGOmHxNnbyd7z55e-kz3Gfoo9HI5s_3J16UuIcPwOYtdTjPbTGpYw3O_QJ2Kd4Dqir9scalmEn7QNKVkJyMj2p6D3kZ5WGvThOGxk3XNmF-YRajJ8Ay5Lr1x4wI_pTH186C_98VIx=w675-h899-s-no-gm?authuser=0" alt="Foto 5">
+            <div class="text-overlay">Cuentra atrás: Los días pasaban, pero actividades juntos transformaban cosas simples en super especiales, cosas que me enlazan contigo, cosas que son parte de nosotros y siempre me recordarán a tí. A pesar de días horribles, llenos de estrés, 
+                cansancio y muchos ojos rojos, el verte tan solo 5 min eran suficientes para darle un giro a mi día.</div>
+        </div>
+        <div class="photo-container">
+            <img class="photo" src="https://lh3.googleusercontent.com/pw/AP1GczObmLL8eIQwe4SLnzdbzbIN2VLRlbT07r2ZWKXvj28iK8zgtdwrIjWaWE-qvdmxF78RR85TmW_hPZwX6ty4PR1Eb5gvMhnAvzoGCgVcAVKpf_YGkC9cSAnfGEO061osdcnpfxff9u0fI5z8y7IwbI_O=w675-h899-s-no-gm?authuser=0" alt="Foto 6">
+            <div class="text-overlay">La última cena: Un frappe y un juego de mesa, realmente no sé necesita mucho para crear inolvidables momentos contigo. Nunca había sentido tanto cariño por una persona que alegra mi día tan solo con su hermosa sonrisa.</div>
+        </div>
+        <div class="photo-container">
+            <img class="photo" src="https://lh3.googleusercontent.com/pw/AP1GczNKOl3t-DvqniLwrwHkT3Aa0DuR1cj_Qu_NUBwR-Oo3xygPwNpgLPTGwMdcajolcUBEEGPBzZTdGaQnA9DLcs9PvKBg3ZiPZi9wgNSjseh2i34JEqUY59BJJVOs5LCWO6Aa7erOwT9WTAwdKuAIBHqr=w539-h899-s-k-no-gm?authuser=0" alt="Foto 7">
+            <div class="text-overlay">Distancia: a pesar de la distancia pues lo que siento por tí no ha cambiado, te sigo queriendo y te amo incluso más de lo que estoy diciendo. Cada audio, cada video, cada videollamada son suficientes para saber por qué te quiero. Siempre estás en mi mente, 
+                siempre te llevo a todo lados.</div>
+        </div>
+
+        <div class="photo-container">
+            <img class="photo" id="userImage" src="https://i.pinimg.com/736x/c3/5e/5f/c35e5fdbcab8866833b84b59112ac9fa.jpg" alt="Foto 7">
+            <div class="text-overlay" id="textOverlay">4 meses eh!? Wow, el tiempo pasa volando, varias cosas han cambiado y pasado. Y sí: extraño tus abrazos, tus besos, te extraño a tí. Sé que algún nos veremos y espero ese día con ansias. 
+                ¿Ya te dije que te ami muchísimo? Que eres SUPER especial para mí. Feliz 4to aniversario amor, te mando un abrazote de esos que te gustan y un montón de besitos solo como tú sabes (y con alguna frase random que probablemente se me saldrá en ese momento). Y tú,¿Qué memoria incluirías? Házmela saber peque! Te ami Ingri, mi peque <3</div>
+        </div>
+
+
+        <label for="inputImagen" class="custom-button">
+            <div class="custom-button-label">¿Qué recuerdo seleccionarias amor?</div>
+            <input type="file" id="inputImagen" accept="image/*" class="image-input">
+        </label>
+
+        <script>
+            function cargarImagen() {
+                document.getElementById('inputImagen').click();
+            }
+
+            document.getElementById('inputImagen').addEventListener('change', function(event) {
+                const archivo = event.target.files[0];
+    
+                if (archivo) {
+                    const urlImagen = URL.createObjectURL(archivo);
+    
+                    const contenedorImagen = document.getElementById('userImage');
+                    contenedorImagen.src = urlImagen;
+                }
+            });
+
+        </script>
+    </div>
+
+    <div>
+        <img class="cat" src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihaCgh52aQP2YlEfMbWPA0UeSyKMOVk_439-lsWNCyZGXyR2jT8LaqR893Xtkdr1D3oE54y4G7iyL7TQNd9IhJLzbgDe=w1143-h898" alt="cat1">
+        <div id="section">
+            <img id="cat2" src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihaVFEuHVnTCLdL1dyzRp2Vlh8dkfS_y8UnWKme2e1QNHVLa13B01nbQtgB9Jx1dNzElkQOrLUtYNLzaMXKiOgBItWMRhA=w1920-h898" alt="cat2">
+            <p id="message">Tómale una foto y me la mandas!</p>
+        </div>
+    </div>
+</body>
+</html>

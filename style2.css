@@ -1,0 +1,231 @@
+/* Seleccionar un id */
+#titulo{
+    color: tomato;
+    
+}
+
+/* para clases */
+p.texto{
+    color: slateblue;
+}
+
+p.especial{
+    color:mediumaquamarine
+}
+
+/* Selector dentro de un div */
+div p {
+    color: aquamarine;
+}
+
+/* Selectores dentro de un div */
+div h2, div h3{
+    color:brown;
+}
+
+/* Selector universal */
+/*   */
+
+/* .color{
+    color: #ff0;
+} */
+
+.color{
+    /* border: 5px black outset; */
+    /* 
+    dotted
+    dashed
+    solid
+    --3D
+    double
+    groove
+    ridge
+    inset
+    outset
+    none
+    hidden */
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 2rem;/*em: relativo a la fuente, rem: relativo al elemento raiz*/
+    
+}
+
+#fondo{
+    /* solo fondo */
+    background-color: rgba(0,0,0,0.2);
+
+    /* opacidad del objeto */
+    opacity: 1;
+    height: 200px;
+
+    background-image: url("img/R&V.jpg");
+    
+    /*
+    auto: detecta el tamaño
+    cover: proporcional a la pantalla
+    contain: contiene la imagen dentro de lo indicado 
+    x y (400 px 600px)
+    */
+
+    /* background-repeat: no-repeat; */
+    /* Solo horizontal: repeat-x
+    Solo vertical: repeat-y
+    No repetir: no-repeat  */
+
+    /* Donde va empezar el fondo */
+    /* background-position: center top; */
+
+    /* Lo escrito antes puede escribirse en una sola linea */
+    /* background: #f00 url('img/R&V.jpg') repeat-y center bottom; */
+
+    /* La propiedad de backgroud debe ser excrita despues de background */
+    /* background-size: 100px 100px; */
+
+    /* O puede ser escrito: */
+    background: #f00 url('img/R&V.jpg') repeat-y center bottom /100px 100px;
+}
+
+.margen{
+    background-color: chocolate;
+    /* top right botton left
+    si solo se escribe uno, se aplica a todos los lados
+    si se escribe dos, es horizantal vertical
+    si se escribe tres, vertical horizontal inferior
+    */
+    margin: 15px 20px 25px 30px;
+
+    /* Espacios dentro del elemento */
+    padding: 30px 25px 20px 10px;
+
+    /* Se encuentra entre margin y padding */
+    border: solid 1px black;
+
+    /* Ancho del contenido */
+    height: 200px;
+
+    /* Ancho del contenido */
+    width: 50px;
+
+    overflow: scroll;
+    /* Por defecto visible: muestra todo
+    hidden: oculta lo que esta fuera del espacio
+    scroll: le añade una barra de desplazameinto */
+
+    /* Borde por fuera del borde, antes de margin */
+    outline: 1px solid red;
+}
+
+.texto{
+    font-family: "Madimi One", sans-serif;
+    text-align: right;
+    text-decoration: overline;
+
+    /* Sombra hacia la derecha, sombra hacia abajo, blur, color */
+    text-shadow: 3px 5px 5px blue;
+}
+
+/* El orden es importante */
+a:link{
+    color: blueviolet;
+}
+
+a:visited{
+    color: gray;
+}
+
+a:hover{
+    color: yellow;
+}
+
+a:active{
+    color: red;
+}
+
+ul{
+    background-color: cyan;
+    list-style-type: georgian;
+    /* padding-left: 0; */
+    list-style-position: indide;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: solid 1px;
+    padding: 5px;
+}
+
+th{
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+/* Importante antes de hover */
+tr:nth-child(even){
+    background-color: #eee;
+}
+
+tr:hover{
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+span{
+    display: block;
+    /* display: none; */
+    /* visibility: hidden; */
+    max-width: 300px;
+    background-color: red;
+}
+.inline {
+    display: inline;
+}
+
+#position{
+    position: sticky;
+    /* fixed: a la pantalla
+    relative: respecto al documento
+    absolute: relativo con el elmento padre
+    sticky */
+    left: 20px;
+    top: 25px
+}
+
+.left{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.right{
+    float: right;
+}
+
+.container{
+    height: 200px;
+}
+
+.column{
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block{
+    display: inline-block;
+    height: 25px;
+    background-color: red;
+}
+
+.center{
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+}

@@ -1,0 +1,11 @@
+{
+    "vscode_custom_css.imports": [
+      "file:///C:/Users/Nitro/.vscode/extensions/coltwillcox.synthwave-x-fluoromachine-contrast-1.0.2/synthwave-x-fluoromachine.css",
+      "file:///C:/Users/Nitro/.vscode/extensions/coltwillcox.synthwave-x-fluoromachine-contrast-1.0.2/epic-80s-transitions.css",
+      "file:///C:/Users/Nitro/.vscode/extensions/coltwillcox.synthwave-x-fluoromachine-contrast-1.0.2/logo.css"
+    ],
+    "workbench.colorCustomizations": {
+        "minimap.background": "#00000000",
+        "tab.inactiveBackground": "#0c0e14"
+    }
+  }

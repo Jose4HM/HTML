@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My primera web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 500px;">
+        <!-- tr-table row -->
+        <thead>
+            <tr>
+                <!-- th-table header -->
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <!-- Fila -->
+        <tbody>
+            <tr>
+                <!-- Td columnas -->
+                <td>Hola beats</td>
+                <td>Gratis</td>
+            </tr>
+            <!-- Fila -->
+            <tr>
+                <td>Chanchito feliz</td>
+                <td>19.90$</td>
+            </tr>
+            <tr>
+                <td>Chanchito feliz muy feliz</td>
+                <td>29.90$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 49.80$</td>
+        </tfoot>
+    </table>
+
+
+    <!-- ul es lista no ordenada -->
+    <ul>
+        <li> Elemento 1 </li>
+        <li> Elemento 2 </li>
+        <li> Elemento 3 </li>
+        <li> Elemento 4 </li>
+    </ul>
+    <!-- Lista ordenada -->
+    <ol>
+        <li value="50"> Elemento 1 </li>
+        <li> Elemento 2 </li>
+        <li> Elemento 3 </li>
+        <li> Elemento 4 </li>
+        <li> Elemento 2 </li>
+        <li> Elemento 3 </li>
+        <li> Elemento 4 </li>
+        <li> Elemento 2 </li>
+        <li> Elemento 3 </li>
+        <li> Elemento 4 </li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;"> Sublemento 2 </li>
+                <li style="list-style-type: lower-roman;"> Sublemento 3 </li>
+                <li style="list-style-type: lower-roman;"> Sublemento 4 </li>
+                <li style="list-style-type: lower-roman;"> Sublemento 2 </li>
+            </ol>
+        </li>
+    </ol>
+
+    <form action="/formulario" method="POST">
+        <!-- GET: url POST: oculta en objeto -->
+        <!-- for direcciona a un id -->
+        <label for="nombre">Nombre</label>
+        <input value="Chanchito" type="text" id="nombre" name="nombre" placeholder="Chanchito triste..."/>
+        <br>
+        <!-- 
+        text- por defecto-cuadro de texto
+        submit- boton
+        email- para correo
+        password- oculta valores
+        radio- marcar boton
+        checkboc- radio pero cuadrado
+        file- elegir archivo
+        -->
+        <label for="apellido">Apellido</label>
+        <input value="feliz" type="text" id="apellido" name="apellido" placeholder="Chanchito triste..."/>
+        <br>
+        <label for="comentario">Comentario</label><br>
+        <textarea cols="50" rows="10" id="comentario" placeholder="Ingrese comentario" name="comentario aqui...">Texto por defecto</textarea>
+        <!-- value no funciona en textarea como propiedad -->
+        <br>
+        <!-- <input type="submit" /> -->
+        <button type="button"><img src="img/R&V.jpg" width="10"/> Tipos botón</button>
+        <button type="reset">Tipos reset</button>
+        <button type="submit">Tipos submit</button>
+        <!-- 
+            button- boton
+            reset- volver los comentarios a defecto
+            submit- enviar
+         -->
+    </form>
+    <!-- Heading -->
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Mi sexto heading</h6>
+    <!-- Parrafos -->
+    <p>Chanchito feliz esta muy feliz</p>
+    <p>Chanchi triste esta muy triste</p>
+    <!-- Separar secciones -->
+    <hr>
+    <h2>Chanchito felipe</h2>
+    <p>Este texto es un texto <span style="color:blue">mucho más largo</span>
+        y se utilizará <br>
+        para la etiqueta span y br para poder <br>
+        hacer saltos de linea.
+    </p>
+    <a href="https://www.google.com">Ir a google dentro de la misma pestaña</a><br>
+    <a target="_blank" href="https://www.google.com">Ir a google en otra pestaña</a>
+
+    <img src="img/R&V.jpg" width="400" height="400"/>
+    
+</body>
+</html>
